@@ -9,11 +9,11 @@ export default () => {
     event.preventDefault();
 
     // make a POST request to post service
-    await axios.post('http://localhost:4000/posts', {
-        title
+    await axios.post("http://localhost:4000/posts", {
+      title,
     });
 
-    setTitle('');
+    setTitle("");
   };
 
   return (
